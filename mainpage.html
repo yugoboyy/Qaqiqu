@@ -22,75 +22,84 @@
         <a href="/Sign in.html">qaqiQu</a>
         <small>Hacktiv8 Hackaton project</small>
 
-        <div class="search-box">
-            <input type="text" placeholder="Search">
+        <div class="username-head">
+            <p>Username</p>
 
         </div>
+
     </header>
 
     <main>
         <div class="container">
 
-            <div class="lef-sidebar">
+            <div class="left-sidebar">
                 <div class="imp-links">
-                    <p>Latest news</p>
-                    <p>Friends</p>
-                    <p>Groups</p>
-                    <p>Find your legs</p>
-
+                    <a href="mainpage.html">Latest news</a> <br> <br>
+                    <a href="mainpage.html">Friends</a> <br> <br>
+                    <a href="mainpage.html">Groups</a> <br> <br>
+                    <a href="mainpage.html">Find your legs</a> <br> <br>
                 </div>
-
             </div>
+
             <div class="mid-content">
                 <div class="post-header">
+                    <h1>FEEDS</h1>
+                    <!-- <label for="post" class="trial">Post a content:</label> -->
+                    <textarea id="post" name="post" rows="5" cols="60"
+                        placeholder="Panjang kaki, jumlah kaki, apakah berbulu..."></textarea>
 
-                    <!-- <h1>Posts</h1> -->
-                    <label for="post" class="trial">Post a content:</label>
-                    <textarea id="post" name="post" rows="5" cols="60" placeholder="Post something...."></textarea>
-                    
+                    <label for="personal-account"><input id="personal-account" type="radio" name="account-type"
+                            class="inline" checked /> Personal</label>
+
                     <button id="show-add-post-modal-btn">Add post</button>
+
                     <hr>
                 </div>
-                
-                <div class="cards">
-                    <div class="card">
-                        <div class="profile">
-                            <img src="https://i.pinimg.com/564x/5e/a5/24/5ea524be1d230dc27809d6942a0a2947.jpg">
-                            <p>“Jangan takut mengejar mimpimu, semua orang bisa belajar programming di Hacktiv7”</p>
-                            <span>Fajrin Noor Rachman</span>
-                            <span>Teacher's Award Hacktiv7</span>
-                        </div>
+
+                <div class="feed-list">
+                    <div class="profile">
+                        <img src="https://i.pinimg.com/564x/5e/a5/24/5ea524be1d230dc27809d6942a0a2947.jpg">
+                        <p>Wow kakinya ada 1000 #hewan</p>
+                        <span>Fajrin Noor Rachman</span>
+                       
                     </div>
-    
+                    <div class="profile">
+                        <img src="https://i.pinimg.com/564x/5e/a5/24/5ea524be1d230dc27809d6942a0a2947.jpg">
+                        <p>Baru pertama kali liat kaki gajah beneran #hewan</p>
+                        <span>Samsul</span>
+                       
+                    </div>
+                    <div class="profile">
+                        <img src="https://i.pinimg.com/564x/5e/a5/24/5ea524be1d230dc27809d6942a0a2947.jpg">
+                        <p>wuoah ternyata selama ini kaki kupu kupu ada 8 gaes #hewan </p>
+                        <span>Sumarsono</span>
+
+                    </div>
+
                 </div>
             </div>
             <div class="right-sidebar">
+                <div class="imp-links">
+                    <h3 class='trendTop'>Trending topics:</h3>
+                    <div class='trendTop'>
+                        <h4>#KakiHewan</h4>
+                        <p class="number">10.k</p>
+                    </div>
+                    <div class='trendTop'>
+                        <h4>#KakiRusaBesarAlaska</h4>
+                        <p class="number">3k</p>
+                    </div>
+                    <div class='trendTop'>
+                        <p>#KakiManusiaGua</p>
+                        <p class="number">1k</p>
+                    </div>
 
+
+                </div>
             </div>
+
         </div>
     </main>
-    <div id="post-container">
-
-
-        <div id="add-post-modal">
-            <div class="modal-content">
-                <button id="close-modal-btn">
-                    <i class="las la-times"></i>
-                </button>
-                <form id="add-post-form">
-                    <div class="form-group">
-                        <label for="title">Title</label>
-                        <input type="text" id="title" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="content">Content</label>
-                        <textarea id="content" rows="10" required></textarea>
-                    </div>
-                    <button type="submit">Add Post</button>
-                </form>
-            </div>
-        </div>
-    </div>
 
     <script src="app.js"></script>
 </body>
