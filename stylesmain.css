@@ -65,7 +65,7 @@ textarea {
 /* header style */
 header {
     background-color: #fff;
-    padding: 16px;
+    padding: px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -116,14 +116,16 @@ header small {
 
 /* post styling ---!*/
 .logo{
-    display: flex;
+    /* display: flex;
     flex-direction: row;
     justify-content: center;
-    align-items: center;
-    width: 10%;
+    align-items: center; */
+    width: 100px;
+    height: auto;
     margin-left: auto;
     margin-right: auto;
-
+    max-width: 100%;
+    
   }
 
 #post-container {
@@ -151,10 +153,10 @@ header small {
     align-items: center;
     width: 100%;
     padding-top: 5%;
-    padding-right: 30%;
+    ;
   }
   .card {
-    width: 277px;
+    width: 60%;
     background-color: white;
     border-radius: 10px;
     margin: 0 10px;
@@ -168,7 +170,7 @@ header small {
   }
   
   .profile img {
-    width: 35%;
+    width: 7%;
     border-radius: 10px;
   }
   
