@@ -13,10 +13,10 @@
           <img src="/logo doang.png" alt="" class="logo">
         <p>Welcome, this is Hacktiv8 social media</p>
       <fieldset>
-        <label for="username">Username: <input id="username" name="username" type="text" required /></label>
+        <label for="username">Username: <input id="username" name="username" type="text" autocomplete="username" required /></label>
        <label for="name">Enter Your Name: <input id="name" name="name" type="text" required /></label> 
         <label for="email">Enter Your Email: <input id="email" name="email" type="email" required /></label> 
-        <label for="password">Password: <input id="password" name="password" type="password" required /></label>
+        <label for="password">Password: <input id="password" name="password" type="password" autocomplete="current-password" required /></label>
       </fieldset>
        <fieldset>
         <legend>Account type (required)</legend>
@@ -43,10 +43,12 @@
         <input class="inline" id="terms-and-conditions" type="checkbox" required name="terms-and-conditions" /> I accept the <a href="termsandcondition.html">terms and conditions</a>
       </label>
       
-      <input type="submit" value="SIGN UP" class="sign-up" onclick="window.location.href=`mainpage.html`" />
+      <input type="submit" value="SIGN UP" class="sign-up"  disabled />
       <input type="submit" value="RETURN TO SIGN IN" class="return-to-sign-in" onclick="window.location.href=`Sign in.html`" />
     </form>
     </div>
     </div>
+
+    <script src="running.js"></script>
   </body>
 </html>
