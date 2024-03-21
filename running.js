@@ -28,3 +28,16 @@ signUpForm.addEventListener("submit", function() {
     window.location.href = "Sign in.html";
 });
 
+let result = [];
+function getUsername(event) {
+    event.preventDefault()
+    let username = document.getElementById("username");
+    let text = username.value;
+    result.push(text)
+    localStorage.setItem("username",JSON.stringify(result));
+    console.log(JSON.parse(localStorage.getItem("username")));
+    if(result.length > 0){
+        // window.open(`Sign in.html`,"_blank");
+        window.location.href=`Sign in.html`
+    }
+}

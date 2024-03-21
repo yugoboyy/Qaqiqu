@@ -7,7 +7,7 @@
   </head>
   <body>
     <h1></h1>
-    <form method="post" action=''>
+    <form>
       <div class="_ab1y">
         <div class="_ab21">
           <img src="/logo doang.png" alt="" class="logo">
@@ -43,8 +43,10 @@
         <input class="inline" id="terms-and-conditions" type="checkbox" required name="terms-and-conditions" /> I accept the <a href="termsandcondition.html">terms and conditions</a>
       </label>
       
-      <input type="submit" value="SIGN UP" class="sign-up"  disabled />
-      <input type="submit" value="RETURN TO SIGN IN" class="return-to-sign-in" onclick="window.location.href=`Sign in.html`" />
+      <!-- <input type="submit" value="SIGN UP" class="sign-up"  disabled /> -->
+      <!-- <input type="submit" value="RETURN TO SIGN IN" class="return-to-sign-in" onclick="window.location.href=`Sign in.html`" /> -->
+      <button class="sign-up" onclick="getUsername(event)" disabled>SIGN UP</button> 
+      <button onclick="window.location.href=`Sign in.html`" >RETURN TO SIGN IN</button>
     </form>
     </div>
     </div>
