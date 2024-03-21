@@ -25,6 +25,10 @@ main {
     padding: 0 16px;
 }
 
+.container{
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+}
 button {
     background-color: var(--main-color);
     padding: 8px 12px;
@@ -65,7 +69,7 @@ textarea {
 /* header style */
 header {
     background-color: #fff;
-    padding: px;
+    padding-bottom: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -76,34 +80,63 @@ header {
     top: 0;
 }
 
+.search-box{
+    background-color: #efefef;
+    width: 200px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    padding: 0 15px;
+    margin-left: 1000px;
+    
+}
+
+.search-box input{
+    width: 70%;
+    background: transparent;
+    padding: 10px;
+    outline: none;
+    border: 0;
+}
+
 header small {
     font-size: var(--font-small);
     font-style: italic;
 }
 
 /* posts styling---! */
-.post-header {
+.mid-content {
     display: flex;
     align-items: center;
     justify-content: space-between;
     flex-direction: column;
-    padding-top: 10px;
-    padding-bottom: 8%;
+    padding-top: 5%;
+    padding-bottom: 5%;
     border-radius: 10px;
     border: 1px solid black;
-    width: 60%;
+    width: 100%;
     margin-right: auto;
     margin-left: auto;
     background-color: white;
+   
+    
 }
 
+hr {
+    
+}
+.post-header{
+    padding: 5%;
+    
+    
+}
 .post-header h1 {
     font-size: var(--font-reg);
     text-transform: uppercase;
 }
 
 .post-header label{
-    margin-right: 77%;
+    margin-right: 75%;
     margin-left: auto;
 }
 /* .no-posts {
@@ -187,6 +220,22 @@ header small {
     line-height: 25px;
     color: #999999;
     font-weight: 800;
+  }
+
+  
+  .left-sidebar{
+    flex-basis: 25%;
+    position: sticky;
+    top: 70px;
+    align-self: flex-start;
+  }
+  .imp-links{
+    text-decoration: none;
+    align-items: center;
+    margin-bottom: 30px;
+    color: #626262;
+    width: fit-content;
+    border-bottom: 1px solid;
   }
 
 /*  */
