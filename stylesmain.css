@@ -41,6 +41,7 @@ button {
 #show-add-post-modal-btn {
     margin-left: auto;
     margin-right: auto;
+    
 }
 
 button:hover {
@@ -178,6 +179,11 @@ textarea {
 
 
 
+}
+
+#del-btn {
+    width: 20%;
+    height: auto;
 }
 
 .cards {

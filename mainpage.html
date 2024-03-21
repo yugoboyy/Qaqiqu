@@ -23,7 +23,7 @@
         <small>Hacktiv8 Hackaton project</small>
 
         <div class="username-head">
-            <p>Username</p>
+            <p id="user">Username</p>
 
         </div>
 
@@ -51,12 +51,12 @@
                     <label for="personal-account"><input id="personal-account" type="radio" name="account-type"
                             class="inline" checked /> Personal</label>
 
-                    <button id="show-add-post-modal-btn">Add post</button>
+                    <button id="show-add-post-modal-btn" onclick="createNewPost()">Add post</button>
 
                     <hr>
                 </div>
 
-                <div class="feed-list">
+                <div id="feed" class="feed-list">
                     <div class="profile">
                         <img src="https://i.pinimg.com/564x/5e/a5/24/5ea524be1d230dc27809d6942a0a2947.jpg">
                         <p>Wow kakinya ada 1000 #hewan</p>
@@ -101,7 +101,7 @@
         </div>
     </main>
 
-    <script src="app.js"></script>
+    <script src="main.js"></script>
 </body>
 
 </html>
