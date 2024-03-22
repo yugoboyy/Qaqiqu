@@ -84,16 +84,12 @@ header {
     align-items: center;
     padding: 0 15px;
     margin-left: 1000px;
-
 }
 
-/* .search-box input {
-    width: 70%;
-    background: transparent;
-    padding: 10px;
-    outline: none;
-    border: 0;
-} */
+.username-head img {
+    width:20%;
+    border-radius: 10px;
+}
 
 header small {
     font-size: var(--font-small);
@@ -140,14 +136,6 @@ textarea {
     margin-right: 75%;
     margin-left: auto;
 }
-
-/* .no-posts {
-    background-color: #fff;
-    border-radius: 8px;
-    border: 1px solid var(--border-color);
-    display: flex;
-    justify-content: center;
-  } */
 
 /* post styling ---!*/
 .logo {
@@ -208,7 +196,8 @@ textarea {
     display: flex;
     flex-direction: column;
     font-family: "Mulish", sans-serif;
-    border-color: aqua;
+    
+    
 }
 
 .profile img {
@@ -238,16 +227,21 @@ textarea {
     position: sticky;
     top: 70px;
     align-self: flex-start;
+    
+    align-content: center;
+    margin-right: 20px;
 }
 
 .right-sidebar {
     flex-basis: 25%;
     padding-left:10px;
+    padding-right: 10px;
     position: sticky;
     top: 10px;
     align-self: flex-start;
     background-color:#3d3d6e;
     border-radius: 10px;
+    margin-left: 20px;
 }
 
 .trendTop {
