@@ -89,6 +89,7 @@ header {
 .username-head img {
     width:20%;
     border-radius: 10px;
+    margin-right: 12px;
 }
 
 header small {
@@ -164,8 +165,6 @@ textarea {
     border: 1px solid var(--border-color);
     display: flex;
     position: relative;
-
-
 
 }
 

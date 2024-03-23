@@ -25,7 +25,7 @@ signUpForm.addEventListener("submit", function() {
     console.log("Username:", username);
 
     // Move to another HTML file
-    window.location.href = "Sign in.html";
+    window.location.href = "index.html";
 });
 
 let result = [];
@@ -38,6 +38,6 @@ function getUsername(event) {
     console.log(JSON.parse(localStorage.getItem("username")));
     if(result.length > 0){
         // window.open(`Sign in.html`,"_blank");
-        window.location.href=`Sign in.html`
+        window.location.href=`index.html`
     }
 }
